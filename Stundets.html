@@ -24,24 +24,30 @@
             margin: 20px;
         }
         button {
-            background-color: #007bff; /* Primary blue */
+            background: linear-gradient(90deg, #007bff, #00c853); /* Gradient from blue to green */
             color: white;
             border: none;
             border-radius: 5px;
             padding: 15px 25px;
             font-size: 1.2em;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: background 0.3s ease, transform 0.2s ease;
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         button:hover {
-            background-color: #0056b3; /* Darker shade on hover */
-            transform: translateY(-2px); /* Slightly lift button */
+            background: linear-gradient(90deg, #0056b3, #009624); /* Darker gradient on hover */
+            transform: translateY(-2px); /* Slight lift effect */
         }
+
         button:active {
-            transform: translateY(1px); /* Slightly press down on click */
+            background: linear-gradient(90deg, #004085, #007A33); /* Even darker gradient on active */
+            transform: translateY(0); /* Reset lift effect */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
         }
+
+
         /* Modal styles */
         #modal {
             display: none;
@@ -98,10 +104,13 @@
     <script>
         // List of names and descriptions
         const people = [
-            { name: "Ryker", description: "Description for Ryker."},
-            { name: "Phillip", description: "Description for Phillip."},
-            { name: "Tony", description: "Description for Tony."},
+            { name: "Ryker", description: "GUNS."},
+            { name: "Phillip", description: "LEPRCOIN."},
+            { name: "Tony", description: "INTALY."},
             { name: "Arnav", description: "Huge Nerd"},
+            { name: "Nick", description: "COCNUT"},
+            { name: "Levi", description: "SKIBIDI"},
+            { name: "Ben", description: "Potatio."},
         ];
 
         // Get the container for the buttons
